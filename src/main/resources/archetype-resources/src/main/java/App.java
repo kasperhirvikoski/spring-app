@@ -6,11 +6,13 @@ package ${package};
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class App {
+public final class App {
+
+    private App() {}
 
     public static void main(String[] args) {
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring-context.xml");
+        final ApplicationContext context = new ClassPathXmlApplicationContext("spring-context.xml");
 
         System.out.println("Hello World!");
     }
