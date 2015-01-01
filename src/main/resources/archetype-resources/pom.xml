@@ -87,8 +87,7 @@
                 <version>2.3</version>
 
                 <configuration>
-                    <shadedArtifactAttached>true</shadedArtifactAttached>
-                    <shadedClassifierName>with-dependencies</shadedClassifierName>
+                    <createDependencyReducedPom>false</createDependencyReducedPom>
                 </configuration>
 
                 <executions>
