@@ -165,6 +165,7 @@
 
         <module name='NoWhitespaceBefore'>
             <property name='tokens' value='SEMI, DOT, POST_DEC, POST_INC' />
+            <property name='allowLineBreaks' value='true' />
         </module>
 
         <module name='OperatorWrap'>
