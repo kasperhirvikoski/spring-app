@@ -16,15 +16,15 @@
         <property name='eachLine' value='true' />
     </module>
 
-    <module name='NewlineAtEndOfFile' />
-
     <!-- Trailing whitespaces -->
     <module name='RegexpSingleline'>
         <property name='format' value='${symbol_escape}s+${symbol_dollar}' />
         <property name='message' value='Trailing whitespace.' />
     </module>
 
+    <module name='NewlineAtEndOfFile' />
     <module name='Translation' />
+    <module name='UniqueProperties' />
 
     <module name='TreeWalker'>
 
@@ -37,6 +37,8 @@
         <module name='MissingOverride' />
         <module name='PackageAnnotation' />
         <module name='SuppressWarnings' />
+        <module name='SuppressWarningsHolder' />
+        <module name='AnnotationLocation' />
 
         <!-- Block Checks -->
 
@@ -58,12 +60,13 @@
             <property name='max' value='4' />
         </module>
 
+        <module name='OneTopLevelClass' />
+
         <!-- Coding -->
 
         <module name='CovariantEquals' />
         <module name='EmptyStatement' />
         <module name='EqualsHashCode' />
-        <module name='FinalLocalVariable' />
 
         <module name='HiddenField'>
             <property name='ignoreConstructorParameter' value='true' />
@@ -75,7 +78,6 @@
         <module name='MagicNumber' />
         <module name='MissingSwitchDefault' />
         <module name='ModifiedControlVariable' />
-        <module name='RedundantThrows' />
         <module name='SimplifyBooleanExpression' />
         <module name='SimplifyBooleanReturn' />
         <module name='StringLiteralEquality' />
@@ -84,7 +86,6 @@
         <module name='IllegalCatch' />
         <module name='IllegalThrows' />
         <module name='PackageDeclaration' />
-        <module name='JUnitTestCase' />
 
         <module name='ReturnCount'>
             <property name='max' value='4' />
@@ -104,6 +105,7 @@
         <module name='MultipleVariableDeclarations' />
         <module name='UnnecessaryParentheses' />
         <module name='OneStatementPerLine' />
+        <module name='OverloadMethodsDeclarationOrder' />
 
         <!-- Imports -->
 
@@ -114,7 +116,16 @@
 
         <!-- Javadoc Comments -->
 
+        <module name='JavadocMethod'>
+            <property name='allowMissingJavadoc' value='true' />
+        </module>
+
         <module name='JavadocStyle' />
+        <module name='NonEmptyAtclauseDescription' />
+        <module name='JavadocTagContinuationIndentation' />
+        <module name='AtclauseOrder' />
+        <module name='JavadocParagraph' />
+        <module name='SingleLineJavadoc' />
 
         <!-- Metrics -->
 
@@ -123,7 +134,7 @@
         <!-- Miscellaneous -->
 
         <module name='UncommentedMain'>
-            <property name='excludedClasses' value='App' />
+            <property name='excludedClasses' value='App$' />
         </module>
 
         <module name='UpperEll' />
@@ -131,6 +142,10 @@
         <module name='Indentation' />
         <module name='TrailingComment' />
         <module name='OuterTypeFilename' />
+
+        <module name='AvoidEscapedUnicodeCharacters'>
+            <property name='allowEscapesForControlCharacters' value='true' />
+        </module>
 
         <!-- Modifiers -->
 
@@ -143,10 +158,15 @@
         <module name='ClassTypeParameterName' />
         <module name='ConstantName' />
         <module name='LocalFinalVariableName' />
-        <module name='LocalVariableName' />
+
+        <module name='LocalVariableName'>
+            <property name='allowOneCharVarInForLoop' value='true' />
+        </module>
+
         <module name='MemberName' />
         <module name='MethodName' />
         <module name='MethodTypeParameterName' />
+        <module name='InterfaceTypeParameterName' />
 
         <module name='PackageName'>
             <property name='format' value='^[a-z]+(${symbol_escape}.[a-z][a-z0-9]*)*${symbol_dollar}' />
@@ -183,6 +203,14 @@
         <module name='WhitespaceAround'>
             <property name='allowEmptyConstructors' value='true' />
             <property name='allowEmptyMethods' value='true' />
+        </module>
+
+        <module name='NoLineWrap' />
+        <module name='EmptyLineSeparator' />
+
+        <module name='SeparatorWrap'>
+            <property name='option' value='nl' />
+            <property name='tokens' value='DOT' />
         </module>
 
     </module>
