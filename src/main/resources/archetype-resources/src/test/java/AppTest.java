@@ -32,7 +32,7 @@ public class AppTest {
     public void tearDown() {}
 
     @Test
-    public void youShallPass() {
+    public void shouldPass() {
 
         assertTrue(true);
     }
