@@ -134,7 +134,7 @@
         <!-- Miscellaneous -->
 
         <module name='UncommentedMain'>
-            <property name='excludedClasses' value='App$' />
+            <property name='excludedClasses' value='App${symbol_dollar}' />
         </module>
 
         <module name='UpperEll' />
