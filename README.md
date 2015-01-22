@@ -1,7 +1,7 @@
 spring-app
 ==========
 
-Maven archetype for a Spring App (Java 7 + Spring 4.1.4.RELEASE).
+Maven archetype for a Spring app (Java 7 + Spring 4.1.4.RELEASE).
 
 ## Install
 
